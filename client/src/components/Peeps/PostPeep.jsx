@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const PostPeep = ({ peepHandler, user }) => {
+const PostPeep = ({ peepHandler }) => {
 
     const [peepMessage, setPeepMessage] = useState(``);
 
@@ -9,7 +9,6 @@ const PostPeep = ({ peepHandler, user }) => {
     const handleSubmit = e => {
         e.preventDefault();
         const peep = {
-            username: user.username,
             peepMessage: peepMessage,
             date: new Date().toISOString()
         }
@@ -20,8 +19,8 @@ const PostPeep = ({ peepHandler, user }) => {
     return (
         <div className='card container'>
             <form onSubmit={handleSubmit}>
-                <textarea type='text' className='newPeep' placeholder='Enter here to peep...' value={peepMessage} onChange={handleChange} required /><br />
-                <button type='submit' className='btn btn-warning' disabled={!peepMessage}>peep!</button>
+                <textarea type='text' name='peepMessage' placeholder='Enter here to peep...' value={peepMessage} onChange={handleChange} required /><br />
+                <button type='submit' value='submit' className='btn btn-warning' disabled={!peepMessage}>peep!</button>
             </form>
         </div >
     )
