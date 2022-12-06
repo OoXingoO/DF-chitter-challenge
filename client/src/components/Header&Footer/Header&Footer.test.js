@@ -13,3 +13,10 @@ test(`Footer matches snapshot`, () => {
 
     expect(footerComponent).toMatchSnapshot();
 });
+
+test(`Footer should render correct text`, () => {
+    render(<Footer />)
+    const footerText = screen.getByText("© 2022 Chitter")
+
+    expect(footerText).toBeInTheDocument();
+})

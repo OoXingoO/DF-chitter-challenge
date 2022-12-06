@@ -1,0 +1,22 @@
+{
+    "peeps": [
+        {
+            "_id": "1",
+            "username": "Gagaga",
+            "date": "2022-11-29T11:30:00.000Z",
+            "peepMessage": "Poker face :|"
+        },
+        {
+            "_id": "2",
+            "username": "Adellee",
+            "date": "2022-11-30T11:30:00.000Z",
+            "peepMessage": "Hello from the other side"
+        },
+        {
+            "_id": "3",
+            "username": "Trumaaaan",
+            "date": "2022-12-01T11:30:00.000Z",
+            "peepMessage": "Good morning good afternoon and goodnight"
+        }
+    ]
+}

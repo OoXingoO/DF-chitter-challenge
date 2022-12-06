@@ -90,7 +90,7 @@ Object {
             class="logo"
           >
             <a
-              href="#"
+              href="/"
             >
               <img
                 alt="Chitter Logo"
@@ -104,7 +104,7 @@ Object {
           >
             <a
               class="home"
-              href="#"
+              href="/"
             >
               Home
             </a>
@@ -133,7 +133,7 @@ Object {
           class="logo"
         >
           <a
-            href="#"
+            href="/"
           >
             <img
               alt="Chitter Logo"
@@ -147,7 +147,7 @@ Object {
         >
           <a
             class="home"
-            href="#"
+            href="/"
           >
             Home
           </a>
