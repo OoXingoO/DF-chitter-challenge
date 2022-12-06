@@ -9,6 +9,7 @@ export const addPeepData = async (peep, getDataHandler, setErrorStatus) => {
         }
     } catch (error) {
         setErrorStatus(error.message)
+        console.log(error.message)
     }
 }
 
@@ -18,5 +19,6 @@ export const getPeepData = async (setPeepData, setErrorStatus) => {
         setPeepData(response.data);
     } catch (error) {
         setErrorStatus(error.message)
+        console.log(error.message)
     }
 }
