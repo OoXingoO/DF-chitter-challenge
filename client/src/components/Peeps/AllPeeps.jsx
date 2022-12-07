@@ -2,7 +2,7 @@ import PeepCard from "./PeepCard";
 
 const AllPeeps = ({ peepData }) => {
 
-    peepData = [...peepData].reverse();    //To reverse into chronological order
+    peepData = [...peepData].reverse();    //To reverse chronological order
 
     const peepListItems = peepData.map(peep => <PeepCard peep={peep} key={peep._id} />);
 
