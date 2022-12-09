@@ -1,19 +1,26 @@
+import axios from 'axios';
 import { useState } from 'react';
 
-const PostPeep = ({ peepHandler }) => {
+const PostPeep = ({ user, getPeepData }) => {
 
     const [peepMessage, setPeepMessage] = useState(``);
 
     const handleChange = e => { setPeepMessage(e.target.value) };
 
-    const handleSubmit = e => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const peep = {
-            peepMessage: peepMessage,
-            date: new Date().toISOString()
+            username: user.username,
+            date: new Date().toISOString(),
+            peepMessage: peepMessage
+        };
+        try {
+            const res = await axios.post(`http://localhost:4000/peeps`, peep)
+            getPeepData();
+            setPeepMessage(``);
+        } catch (error) {
+            alert(`Oops! Something went wrong: ${error.message}`);
         }
-        setPeepMessage(``);
-        peepHandler(peep);
     }
 
     return (

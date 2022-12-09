@@ -18,9 +18,11 @@ Chitter Challenge
 - `npm i cors` - cross origin resource sharing npm package
 - `npm i body-parser` - creates middleware for handling json req.body
 - `npm i mongoose` - Mongoose provide interaction between server & MongoDB
+- `npm i --save express-validator` - for sanitization
 
 
 ### Standard Acceptance Criteria
+---
 ```
 As a trainee software engineer
 So that I can let people know what I am doing  

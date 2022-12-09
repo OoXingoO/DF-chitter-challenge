@@ -1,31 +1,35 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import AllPeeps from '../Peeps/AllPeeps';
 import PostPeep from '../Peeps/PostPeep';
 
-import { addPeepData, getPeepData } from '../../asyncFunctions/externalDataHandlers';
+// import { addPeepData, getPeepData } from '../../asyncFunctions/externalDataHandlers';
+
 
 const HomePage = (user, setUser) => {
 
     const [peepData, setPeepData] = useState([]);
-    const [errorStatus, setErrorStatus] = useState();
+    const [getError, setGetError] = useState();
+    const [postError, setPostError] = useState(``);
 
-    const getDataHandler = () => {
-        getPeepData(setPeepData, setErrorStatus);
+    const getPeepData = async () => {
+        try {
+            const res = await axios.get(`http://localhost:4000/peeps`);
+            setPeepData(res.data);
+        } catch (error) {
+            setGetError(error.message)
+        }
     }
 
     useEffect(() => {
-        getDataHandler();
+        getPeepData();
     }, []);
-
-    const addDataHandler = peep => {
-        addPeepData(peep, getDataHandler, setErrorStatus, peepData.length + 1);
-    }
-
 
     return (
         <div>
-            <PostPeep peepHandler={addDataHandler} />
+            {/* <h1>Welcome, {user.username}!</h1> */}
+            <PostPeep user={user} getPeepData={getPeepData} setPostError={setPostError} />
             <AllPeeps peepData={peepData} />
         </div>
     )
