@@ -15,7 +15,7 @@ const PostPeep = ({ user, getPeepData }) => {
             peepMessage: peepMessage
         };
         try {
-            const res = await axios.post(`http://localhost:4000/peeps`, peep)
+            const res = await axios.post(`http://localhost:4000/peeps`, user, peep)
             getPeepData();
             setPeepMessage(``);
         } catch (error) {

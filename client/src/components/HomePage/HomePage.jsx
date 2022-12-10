@@ -25,7 +25,6 @@ const HomePage = (user, setUser) => {
 
     return (
         <div>
-            {/* <h1>Welcome, {user.username}!</h1> */}
             <PostPeep user={user} getPeepData={getPeepData} setPostError={setPostError} />
             <AllPeeps peepData={peepData} />
         </div>

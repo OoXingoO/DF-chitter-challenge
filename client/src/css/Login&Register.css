@@ -1,0 +1,31 @@
+#login-card {
+    font-family: 'Canvas Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    padding: 15px 15px;
+    border: 2px solid #DFA400;
+    border-radius: 4px;
+    margin-top: 43px;
+}
+
+#login-peeps {
+    width: 100%;
+}
+
+input:placeholder-shown {
+    font-style: italic;
+}
+
+#register-card {
+    display: inline-flex;
+    width: 50%;
+    border: 1px solid #DFA400;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+#check-latest-peeps {
+    font-weight: bold;
+    font-size: large;
+}

@@ -31,15 +31,11 @@ ul.topnav li a {
 ul.topnav li a.logOut-button {
   background-color: #FF914D;
   color: white;
+  cursor: pointer;
 }
 
 ul.topnav li.logOut {
   float: right;
-}
-
-.home:hover {
-  background-color: #FF914D;
-  color: white;
 }
 
 @media screen and (max-width: 600px) {

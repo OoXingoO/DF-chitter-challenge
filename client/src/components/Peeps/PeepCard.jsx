@@ -6,7 +6,7 @@ const PeepCard = ({ peep }) => {
     const displayTime = new Date(date).toLocaleTimeString();
 
     return (
-        <div className="card container">
+        <div className="card container" id="peep-card">
             <div className="card-header">
                 <p>@{username}</p>
             </div>

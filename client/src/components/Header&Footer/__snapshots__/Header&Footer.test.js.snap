@@ -99,27 +99,6 @@ Object {
               />
             </a>
           </li>
-          <li
-            id="home-item"
-          >
-            <a
-              class="home"
-              href="/"
-            >
-              Home
-            </a>
-          </li>
-          <li
-            class="logOut"
-            id="logout-item"
-          >
-            <a
-              class="logOut-button"
-              href="#"
-            >
-              Log out
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -140,27 +119,6 @@ Object {
               class="img-fluid"
               src="logo.png"
             />
-          </a>
-        </li>
-        <li
-          id="home-item"
-        >
-          <a
-            class="home"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          class="logOut"
-          id="logout-item"
-        >
-          <a
-            class="logOut-button"
-            href="#"
-          >
-            Log out
           </a>
         </li>
       </ul>
