@@ -3,7 +3,7 @@ import Peep from '../models/peep.model.js';
 import chai, { expect } from "chai";
 import chaiHttp from "chai-http";
 
-import testPeepData from './testData/samplePeeps.js';
+import testPeepData from './testData/sampleData.js';
 import server from '../server.js';
 
 chai.use(chaiHttp);

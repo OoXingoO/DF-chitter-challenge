@@ -2,7 +2,7 @@ import { useState } from 'react';
 // import { Link, Navigate } from 'react-router-dom';
 import axios from 'axios';
 
-const LoginPage = ({ setUser: setLoginUser }) => {
+const LoginForm = ({ setUser: setLoginUser }) => {
 
     const [user, setUser] = useState({
         username: ``,
@@ -48,4 +48,4 @@ const LoginPage = ({ setUser: setLoginUser }) => {
     )
 }
 
-export default LoginPage;
+export default LoginForm;

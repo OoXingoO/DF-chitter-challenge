@@ -5,6 +5,8 @@ import cors from 'cors';
 import { config } from 'dotenv';
 
 import { peeps } from './routes/peeps.js';
+import { login } from './routes/login.js';
+import { register } from './routes/register.js';
 
 config({ path: `.env.${process.env.NODE_ENV}` });
 
@@ -13,7 +15,9 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(`/peeps`, peeps)
+app.use(`/peeps`, peeps);
+app.use(`/login`, login);
+app.use(`/register`, register)
 
 const main = async () => {
     console.log(`Connecting to DB @ ${process.env.DB_URI}`);

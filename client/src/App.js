@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Header&Footer/Footer';
 import Header from './components/Header&Footer/Header';
 import HomePage from './components/HomePage/HomePage';
-import LoginPage from './components/Login/LoginPage';
 
 function App() {
 

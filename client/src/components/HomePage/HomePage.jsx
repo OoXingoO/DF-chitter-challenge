@@ -4,9 +4,6 @@ import axios from 'axios';
 import AllPeeps from '../Peeps/AllPeeps';
 import PostPeep from '../Peeps/PostPeep';
 
-// import { addPeepData, getPeepData } from '../../asyncFunctions/externalDataHandlers';
-
-
 const HomePage = (user, setUser) => {
 
     const [peepData, setPeepData] = useState([]);

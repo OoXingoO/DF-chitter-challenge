@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "1",
+        "name": "Lady Gaga",
+        "username": "Gagaga",
+        "email": "gaga@email.com",
+        "password": "password123"
+    },
+    {
+        "_id": "2",
+        "name": "Laurie Adele",
+        "username": "Adellee",
+        "email": "adele@email.com",
+        "password": "password1234"
+    },
+    {
+        "_id": "3",
+        "name": "Trauman Burbank",
+        "username": "Trumaaaan",
+        "email": "trauman@email.com",
+        "password": "password12345"
+    }
+]
