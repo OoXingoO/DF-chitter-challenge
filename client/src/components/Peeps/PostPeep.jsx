@@ -9,13 +9,13 @@ const PostPeep = ({ user, getPeepData }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const peep = {
+        let peep = {
             username: user.username,
             date: new Date().toISOString(),
             peepMessage: peepMessage
         };
         try {
-            const res = await axios.post(`http://localhost:4000/peeps`, user, peep)
+            const res = await axios.post(`http://localhost:4000/peeps`, peep)
             getPeepData();
             setPeepMessage(``);
         } catch (error) {
@@ -33,4 +33,4 @@ const PostPeep = ({ user, getPeepData }) => {
     )
 }
 
-export default PostPeep
+export default PostPeep;
