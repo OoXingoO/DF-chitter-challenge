@@ -1,16 +1,19 @@
 [
     {
-        "username": "testUser1",
+        "name": "testUser01",
+        "username": "testUsername01",
         "date": "2022-12-01T00:00:00.000Z",
         "peepMessage": "testUser1 has posted this"
     },
     {
-        "username": "testUser2",
+        "name": "testUser2",
+        "username": "testUsername02",
         "date": "2022-12-02T00:00:00.000Z",
         "peepMessage": "testUser2 has posted this"
     },
     {
-        "username": "testUser3",
+        "name": "testUser3",
+        "username": "testUsername03",
         "date": "2022-12-03T00:00:00.000Z",
         "peepMessage": "testUser3 has posted this"
     }

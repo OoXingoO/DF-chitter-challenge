@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+#login-button,
+#register-button {
+    margin-top: 10px;
+}
+
 input:placeholder-shown {
     font-style: italic;
 }

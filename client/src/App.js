@@ -16,24 +16,22 @@ import AllPeeps from './components/Peeps/AllPeeps';
 function App() {
 
   const [user, setUser] = useState({});
-  const logOut = () => setUser({})
-
   const [peepData, setPeepData] = useState([]);
-  const [getError, setGetError] = useState();
-  const [postError, setPostError] = useState(``);
 
   const getPeepData = async () => {
     try {
       const res = await axios.get(`http://localhost:4000/peeps`);
       setPeepData(res.data);
     } catch (error) {
-      setGetError(error.message)
+      setPeepData(error.message)
     }
   }
 
   useEffect(() => {
     getPeepData();
   }, []);
+
+  const logOut = () => setUser({})
 
   return (
     <main>

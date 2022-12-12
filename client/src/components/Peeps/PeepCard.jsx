@@ -1,6 +1,6 @@
 const PeepCard = ({ peep }) => {
 
-    const { username, date, peepMessage } = peep
+    const { name, username, date, peepMessage } = peep
 
     const displayDate = new Date(date).toLocaleDateString();
     const displayTime = new Date(date).toLocaleTimeString();
@@ -8,7 +8,7 @@ const PeepCard = ({ peep }) => {
     return (
         <div className="card container" id="peep-card">
             <div className="card-header">
-                <p>@{username}</p>
+                <p>{name}&nbsp;@{username}</p>
             </div>
             <div className="card-body">
                 <p className="card-text">{peepMessage}</p>

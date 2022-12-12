@@ -8,6 +8,7 @@ const router = express.Router();
 router.route(`/`)
     .post(
         [
+            check(`name`).exists(),
             check(`username`).exists(),
             check(`peepMessage`).exists(),
             check(`date`).exists().isISO8601()

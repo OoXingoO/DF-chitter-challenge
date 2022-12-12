@@ -33,8 +33,10 @@ const Register = () => {
             });
             return;
         }
+
         alert(`Invalid input`);
     }
+
 
     return (
         <div className='card container' id='register-card'>
@@ -43,15 +45,19 @@ const Register = () => {
                 Already have an account?&nbsp;<Link to="/login">Sign In</Link>
             </p>
             <form onSubmit={register}>
+                <label htmlFor='name'>Name:</label><br />
                 <input type="text" id="register-name" name="name" value={user.name} onChange={handleChange} placeholder="Enter name..." />
                 <br />
+                <label htmlFor='username'>Username:</label><br />
                 <input type="text" id="register-username" name="username" value={user.username} onChange={handleChange} placeholder="Enter username..." />
                 <br />
+                <label htmlFor='email'>Email:</label><br />
                 <input type="email" id="register-email" name="email" value={user.email} onChange={handleChange} placeholder="Enter email..." />
                 <br />
+                <label htmlFor='password'>Password:</label><br />
                 <input type="password" id="register-password" name="password" value={user.password} onChange={handleChange} placeholder="Enter password..." />
                 <br />
-                <button type="submit" className='btn btn-warning'>
+                <button id="register-button" type="submit" className='btn btn-warning'>
                     Register
                 </button>
             </form>

@@ -10,6 +10,7 @@ const PostPeep = ({ user, getPeepData }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         let peep = {
+            name: user.name,
             username: user.username,
             date: new Date().toISOString(),
             peepMessage: peepMessage
@@ -24,10 +25,11 @@ const PostPeep = ({ user, getPeepData }) => {
     }
 
     return (
-        <div className='card container'>
+        <div className='card container' id='peep-form'>
+            <p>Hello, {user.username}! What's on your mind?</p>
             <form onSubmit={handleSubmit}>
                 <textarea type='text' name='peepMessage' placeholder='Enter here to peep...' value={peepMessage} onChange={handleChange} required /><br />
-                <button type='submit' value='submit' className='btn btn-warning' disabled={!peepMessage}>peep!</button>
+                <button type='submit' id='peep-button' value='submit' className='btn btn-warning' disabled={!peepMessage}>peep!</button>
             </form>
         </div >
     )

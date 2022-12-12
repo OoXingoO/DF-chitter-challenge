@@ -8,6 +8,12 @@ describe(`PeepCard tests`, () => {
         render(<PeepCard peep={sampleData.peeps[0]} />);
     });
 
+    it(`should display name on screen`, () => {
+        const testName = screen.getByText(/Lady Gaga/i);
+
+        expect(testName).toBeInTheDocument();
+    })
+
     it(`should display username on screen`, () => {
         const testUsername = screen.getByText(/Gagaga/i);
 

@@ -51,16 +51,16 @@ const LoginPage = ({ setUser: setLoginUser }) => {
                 <div className='row g-2'>
                     <div className='col-6 order-last'>
                         <div className='card mb-3' id='login-card'>
-                            <h3>Log in Chitter:</h3>
+                            <h3>Log in to Chitter:</h3>
                             <form onSubmit={login}>
                                 <input type="text" id="sign-in-username" name="username" value={user.username} onChange={handleChange} placeholder="Enter username..." />
                                 <br />
                                 <input type="password" id="sign-in-password" name="password" value={user.password} onChange={handleChange} placeholder="Enter password..." />
                                 <br />
-                                <button type="submit" value="Login" className='btn btn-warning' >Login</button>
+                                <button type="submit" id='login-button' value="Login" className='btn btn-warning' >Login</button>
                             </form>
                             <Link to="/register">
-                                Dont have an account? Register now!
+                                Don't have an account? Register now!
                             </Link>
                         </div>
                     </div>

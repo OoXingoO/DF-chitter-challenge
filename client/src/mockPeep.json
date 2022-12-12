@@ -2,18 +2,21 @@
     "peeps": [
         {
             "_id": "1",
+            "name": "Lady Gaga",
             "username": "Gagaga",
             "date": "2022-11-29T11:30:00.000Z",
             "peepMessage": "Poker face :|"
         },
         {
             "_id": "2",
+            "name": "Laurie Adele",
             "username": "Adellee",
             "date": "2022-11-30T11:30:00.000Z",
             "peepMessage": "Hello from the other side"
         },
         {
             "_id": "3",
+            "name": "Truman Burbank",
             "username": "Trumaaaan",
             "date": "2022-12-01T11:30:00.000Z",
             "peepMessage": "Good morning good afternoon and goodnight"

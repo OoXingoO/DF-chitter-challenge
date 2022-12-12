@@ -13,3 +13,11 @@ textarea {
 #peep-card {
     border-color: #DFA400;
 }
+
+#peep-button {
+    margin-bottom: 15px;
+}
+
+#peep-form {
+    margin-top: 10px;
+}

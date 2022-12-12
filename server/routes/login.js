@@ -8,8 +8,8 @@ const router = express.Router();
 router.route(`/`)
     .post(
         [
-            check(`username`).exists().isLength({ min: 2 }),
-            check(`password`).exists().isLength({ min: 5 })
+            check(`username`).exists(),
+            check(`password`).exists()
         ],
         (req, res) => {
             const { username, password } = req.body;

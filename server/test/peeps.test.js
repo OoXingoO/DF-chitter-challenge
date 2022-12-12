@@ -3,31 +3,30 @@ import Peep from '../models/peep.model.js';
 import chai, { expect } from "chai";
 import chaiHttp from "chai-http";
 
-import testPeepData from './testData/sampleData.js';
+import testData from './testData/sampleData.js';
 import server from '../server.js';
 
 chai.use(chaiHttp);
-const testData = testPeepData.peeps;
+const testPeepData = testData.peeps;
 
 describe(`/peeps route tests`, () => {
 
     const testServer = chai.request(server).keepOpen();
 
     beforeEach(async () => {
-
         try {
             await Peep.deleteMany();
             console.log(`Peeps collection cleared`);
         } catch (error) {
-            console.log(`Error clearing peeps collection`);
+            console.log(`Error clearing peeps collection: ${error.message}`);
             throw new Error();
         };
 
         try {
-            await Peep.insertMany(testData);
+            await Peep.insertMany(testPeepData);
             console.log(`Database populated with test peeps`);
         } catch (error) {
-            console.log(`Error inserting into peep collection`);
+            console.log(`Error inserting into peep collection: ${error.message}`);
             throw new Error();
         };
     });
@@ -39,16 +38,29 @@ describe(`/peeps route tests`, () => {
                 .get(`/peeps`)
                 .send();
 
-            console.log(res.status);
-            console.log(res.body);
             expect(res).to.have.status(200);
             expect(res.body).to.be.an(`array`);
-            expect(res.body.length).to.equal(testData.length)
+            expect(res.body.length).to.equal(testPeepData.length);
         })
     });
 
-    // describe(`/POST peeps`, () => {
+    describe(`/POST peeps`, () => {
 
-    //     it(`should should receive an error if no `)
-    // })
+        it(`should create a new peep that is properly formed`, async () => {
+            const newPeep = {
+                name: "testUser04",
+                username: "testUsername04",
+                peepMessage: "Just testing a peep here!",
+                date: new Date().toISOString()
+            }
+
+            const res = await testServer
+                .post(`/peeps`)
+                .send(newPeep);
+
+            expect(res).to.have.status(201);
+            expect(res.body).to.be.an(`object`);
+            expect(res.body).to.have.property(`peep`, `Peep added successfully`);
+        })
+    })
 })
