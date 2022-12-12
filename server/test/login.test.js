@@ -61,9 +61,8 @@ describe(`/Login route tests`, () => {
             expect(res.body).to.have.property(`message`, `Details not found`);
         });
 
-        it(`should return status 422 if invalid username is inputted`, async () => {
+        it(`should return status 422 if username field is missing`, async () => {
             const mockUser = {
-                username: "",
                 password: "invalid password"
             }
 
