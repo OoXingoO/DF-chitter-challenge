@@ -72,7 +72,7 @@ describe(`/Login route tests`, () => {
                 .send(mockUser);
 
             expect(res).to.have.status(422);
-            expect(res.body).to.have.property(`Invalid login data`);
+            expect(res.text).to.be.eql(`Invalid login data`);
         })
     })
 })
