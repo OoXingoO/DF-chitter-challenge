@@ -26,16 +26,16 @@ const testData = {
     "users": [
         {
             "_id": "63968c14c9726f8ca46f6828",
-            "name": "testUser05",
-            "username": "testUsername05",
-            "email": "testUser05@email.com",
+            "name": "testUser01",
+            "username": "testUsername01",
+            "email": "testUser01@email.com",
             "password": "password123"
         },
         {
             "_id": "63968c14c9726f8ca46f6829",
-            "name": "testUser06",
-            "username": "testUsername06",
-            "email": "testUser06@email.com",
+            "name": "testUser02",
+            "username": "testUsername02",
+            "email": "testUser02@email.com",
             "password": "password12345"
         }
     ]

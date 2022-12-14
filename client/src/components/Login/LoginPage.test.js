@@ -75,7 +75,7 @@ describe(`LoginPage tests`, () => {
             userEvent.type(usernameInput, testUserLogin.username);
             userEvent.type(passwordInput, testUserLogin.password);
 
-            await act(async () => userEvent.click(loginButton))
+            await act(async () => userEvent.click(loginButton));
         });
 
         it(`should make a POST request to /login route`, async () => {

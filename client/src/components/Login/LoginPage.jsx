@@ -46,7 +46,7 @@ const LoginPage = ({ setUser: setLoginUser }) => {
 
     return (
         <>
-            {loggedIn && <Navigate to="/home" />}
+            {loggedIn && <Navigate to="/" />}
             <div className='container-fluid'>
                 <div className='row g-2'>
                     <div className='col-6 order-last'>
