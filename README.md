@@ -11,19 +11,21 @@ DF Chitter Challenge
 ===m""m===
 ```
 
-About the project:
+About the project
 -------
 
 To write a small full-stack twitter clone that will allow users to be able to register and then log in to post messages to a public wall.
 
+#### Project approaches
+Check out [myREADME](https://github.com/OoXingoO/DF-chitter-challenge/blob/main/myREADME.md) for more details.
 
-Getting started:
+Getting started
 -------
 - `npm install` → installs project dependencies.
 - `npm start` → run the app on local server.
 - `npm test` → launch the test runner.
 
-Built with:
+Built with
 -------
 ![javascript](	https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -38,7 +40,7 @@ Built with:
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
 
-Features:
+Features
 -------
 
 #### Acceptance Criteria
@@ -68,14 +70,13 @@ So that I can avoid others posting messages on Chitter as me
 I want to log out of Chitter
 ```
 
-### Additional requirements:
+### Additional requirements
 ------
 
 * You don't have to be logged in to see the peeps.
 * Trainee software engineers sign up to chitter with their email, password, name and a username (e.g. ewithers@digitalfutures.com, password123, Edward Withers, dearshrewdwit).
 * The username and email are unique.
 * Peeps (posts to chitter) have the name of the trainee and their user handle.
-* Your README should indicate the technologies used, and give instructions on how to install and run the tests.
 
 Self-review
 ------
