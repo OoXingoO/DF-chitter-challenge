@@ -19,7 +19,7 @@ To write a small full-stack twitter clone that will allow users to be able to re
 #### Project approaches
 Check out [myREADME](https://github.com/OoXingoO/DF-chitter-challenge/blob/main/myREADME.md) for more details.
 
-Getting started
+### Getting started
 -------
 - `npm install` → installs project dependencies.
 - `npm start` → run the app on local server.
@@ -69,9 +69,7 @@ As a trainee
 So that I can avoid others posting messages on Chitter as me
 I want to log out of Chitter
 ```
-
-### Additional requirements
-------
+#### Additional requirements
 
 * You don't have to be logged in to see the peeps.
 * Trainee software engineers sign up to chitter with their email, password, name and a username (e.g. ewithers@digitalfutures.com, password123, Edward Withers, dearshrewdwit).
@@ -82,15 +80,15 @@ Self-review
 ------
 #### What have I learnt
 - Insight into how back-end server interacts with the front-end to create a working full-stack application.
-- Creating a server using nodeJS.
-- How to handle requests for different routes on the server using the ExpressJS framework and how routing can be used to handle different requests and return appropriate responses.
 - Using mongoDB database to request and submit data.
 - Using Express Validator for sanitisation of data submitted in requests.
 - Using Mocha and Chai for server & database testing.
+
 #### What could I do differently?
 - To deploy my application on the web server.
 - To use https for more secure web browsing.
 - To have safer loggin and register system through encryption of passwords and using JSON web tokens as a way for authenticating user requests.
+
 #### What additional/enhanced features could I add to develop this project further?
 - To be able to reply to a peep from another user.
 - To be able to receive notifications via email if tagged in a peep.
